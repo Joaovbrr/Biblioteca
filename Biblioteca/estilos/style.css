@@ -1,0 +1,123 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+header {
+    background-color: #3498db;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.bar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.bar li {
+    display: inline;
+}
+
+.bar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.bar li a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+.bv {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.bv img {
+    width: 80%;
+    max-width: 600px;
+}
+
+.search-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.search-container input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos dos livros */
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.books {
+    text-align: center;
+    margin: 20px;
+    flex-basis: 30%;
+}
+
+.book-item {
+    display: none;
+    text-align: center;
+}
+
+.book-item img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.book-item img:hover {
+    transform: scale(1.1);
+}
+
+.book-item p {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Centralizar após pesquisa */
+.books-container.searched .book-item {
+    display: block;
+    margin: 20px auto;
+}

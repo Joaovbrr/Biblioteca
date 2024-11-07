@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel e Devolução de Livros - Cooking Librie</title>
+    <link rel="stylesheet" href="../estilos/alugar-devolver.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Livros</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="../pages/paglogin.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bv">
+            <h1>Aluguel e Devolução de Livros</h1>
+        </div>
+
+        <div class="alugar">
+            <h2>Alugar Livro</h2>
+            <form id="form-alugar">
+                <label for="livro">Selecione o Livro:</label>
+                <select id="livro" required>
+                    <!-- Opções de livros disponíveis para aluguel -->
+                </select>
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="data-aluguel">Data de Aluguel:</label>
+                <input type="date" id="data-aluguel" required>
+                <button type="submit">Alugar</button>
+            </form>
+        </div>
+
+        <div class="devolver">
+            <h2>Devolver Livro</h2>
+            <form id="form-devolver">
+                <label for="livro-devolver">Selecione o Livro:</label>
+                <select id="livro-devolver" required>
+                    <!-- Opções de livros alugados -->
+                </select>
+                <button type="submit">Devolver</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../scripts/alugar-devolver.js"></script>
+</body>
+</html>

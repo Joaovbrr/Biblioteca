@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="../estilos/adimin.css">
+</head>
+<body>
+  <header>
+    <h1>Administração da página</h1>
+  </header>
+  
+  <section>
+    <h2>Adicionar Novo Livro</h2>
+    <form id="add-book-form">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required>
+      
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" name="autor" required>
+      
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" required>
+      
+      <label for="imagem">Imagem:</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*" required>
+
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+  <div class="link">
+    <h3>Ir para <a href="../pages/livros.html">Coleção</a></h3>
+  </div>
+  <script src="../scripts/sdimin.js"></script> 
+</body>
+</html>

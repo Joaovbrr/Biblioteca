@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+header {
+    background-color: #3498db;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.bar {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.bar li {
+    display: inline;
+}
+
+.bar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s; 
+}
+
+.bar li a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+.bv {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.books {
+    text-align: center;
+    margin: 20px;
+    flex-basis: 30%; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 15px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
+}
+
+.books:hover {
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+}
+
+.books img {
+    width: 100%; /* Preencher o espaço disponível */
+    max-width: 225px;
+    height: auto; /* Manter a proporção da imagem */
+    border-radius: 10px; 
+}
+
+.book-fixo {
+    margin-bottom: 20px; /* Espaçamento entre os livros */
+}
+
+.add-book {
+    margin-top: 20px; /* Espaço acima do formulário de adicionar livro */
+}
+
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; 
+    max-width: 300px; /* Largura do formulário de adição de livro */
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 15px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
